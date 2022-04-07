@@ -56,74 +56,77 @@
         </p>
         <ul class="gallery__content photo">
           <li class="photo__content">
-            <img src="./img/Photos-and-video/photo1-280x280.jpg" width="280" height="280" alt="Неродные просторы">
-            <p class="photo__title">
-              Неродные просторы
-            </p>
-            <p class="photo__author">
-              Автор фото: Борис
-            </p>
-            <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
-              alt="Поставить лайк">
-            <span class="photo__like-number">
-              1350
-            </span>
+            <figure class="photo-image">
+              <img src="./img/Photos-and-video/photo1-280x280.jpg" width="280" height="280" alt="Неродные просторы">
+              <figcaption class="photo__description">
+                <p class="photo__title">
+                  Неродные просторы
+                </p>
+                <p class="photo__author">
+                  Автор фото: Борис
+                </p>
+                <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
+                  alt="Поставить лайк">
+                <span class="photo__like-number">
+                  1350
+                </span>
+              </figcaption>
+            </figure>
           </li>
           <li class="photo__content">
-            <img src="./img/Photos-and-video/photo2-280x280.jpg" width="280" height="280" alt="Местная растительность">
-            <p class="photo__title">
-              Местная растительность
-            </p>
-            <p class="photo__author">
-              Автор фото: Сергей
-            </p>
-            <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
-              alt="Поставить лайк">
-            <span class="photo__like-number">
-              143
-            </span>
+            <figure class="photo-image">
+              <img src="./img/Photos-and-video/photo2-280x280.jpg" width="280" height="280"
+                alt="Местная растительность">
+              <figcaption class="photo__description">
+                <p class="photo__title">
+                  Местная растительность
+                </p>
+                <p class="photo__author">
+                  Автор фото: Сергей
+                </p>
+                <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
+                  alt="Поставить лайк">
+                <span class="photo__like-number">
+                  143
+                </span>
+              </figcaption>
+            </figure>
           </li>
           <li class="photo__content">
-            <img src="./img/Photos-and-video/photo2-280x280.jpg" width="280" height="280" alt="Местная растительность">
-            <p class="photo__title">
-              Местная растительность
-            </p>
-            <p class="photo__author">
-              Автор фото: Сергей
-            </p>
-            <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
-              alt="Поставить лайк">
-            <span class="photo__like-number">
-              143
-            </span>
+            <figure class="photo-image">
+              <img src="./img/Photos-and-video/photo3-280x280.jpg" width="280" height="280" alt="Дорога на север">
+              <figcaption class="photo__description">
+                <p class="photo__title">
+                  Дорога на север
+                </p>
+                <p class="photo__author">
+                  Автор фото: Петр
+                </p>
+                <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
+                  alt="Поставить лайк">
+                <span class="photo__like-number">
+                  96
+                </span>
+              </figcaption>
+            </figure>
           </li>
           <li class="photo__content">
-            <img src="./img/Photos-and-video/photo3-280x280.jpg" width="280" height="280" alt="Дорога на север">
-            <p class="photo__title">
-              Дорога на север
-            </p>
-            <p class="photo__author">
-              Автор фото: Петр
-            </p>
-            <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
-              alt="Поставить лайк">
-            <span class="photo__like-number">
-              96
-            </span>
-          </li>
-          <li class="photo__content">
-            <img src="./img/Photos-and-video/photo4-280x280.jpg" width="280" height="280" alt="Мост дьявола">
-            <p class="photo__title">
-              Мост дьявола
-            </p>
-            <p class="photo__author">
-              Автор фото: Антон
-            </p>
-            <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
-              alt="Поставить лайк">
-            <span class="photo__like-number"
-              254
-            </span>
+            <figure class="photo-image">
+              <img src="./img/Photos-and-video/photo4-280x280.jpg" width="280" height="280" alt="Мост дьявола">
+              <figcaption class="photo__description">
+                <p class="photo__title">
+                  Мост дьявола
+                </p>
+                <p class="photo__author">
+                  Автор фото: Антон
+                </p>
+                <img class="photo__like-icon" src="./img/Photos-and-video/like-icon.svg" width="23" height="21"
+                  alt="Поставить лайк">
+                <span class="photo__like-number">
+                  254
+                </span>
+              </figcaption>
+            </figure>
           </li>
         </ul>
       </div>
@@ -145,11 +148,13 @@
   <!-- Подвал -->
   <footer class="main-footer">
     <div class="main-footer__wraper">
-      <p class="main-footer__hashtag">
-        #visitsedona
-      </p>
       <div class="main-footer__social social">
         <ul class="social__list">
+          <li class="social__item">
+            <p class="main-footer__hashtag">
+              #visitsedona
+            </p>
+          </li>
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="24" height="14" viewBox="0 0 24 14" fill="#fff" xmlns="http://www.w3.org/2000/svg">
