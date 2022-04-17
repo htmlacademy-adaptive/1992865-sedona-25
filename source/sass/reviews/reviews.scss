@@ -1,0 +1,87 @@
+.reviews__wrapper {
+  margin: 0;
+  margin-top: 36px;
+}
+
+.reviews__title {
+  font-size: 18px;
+  line-height: 144%;
+  font-weight: 700;
+}
+
+.reviews__text {
+  color: #333333;
+  line-height: 150%;
+  margin-bottom: 28px;
+}
+
+.reviews__form {
+  margin-bottom: 24px;
+}
+
+.reviews__author-fieldset {
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.reviews__author-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 144%;
+  font-weight: 700;
+}
+
+.reviews__author {
+  text-align: left;
+}
+
+.reviews__author-contact {
+  margin-top: 24px;
+  margin-bottom: 34px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.reviews__author-impression {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.reviews__author-visited {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.author-visited__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+}
+
+.reviews__author-emotions {
+  margin-top: 24px;
+  margin-bottom: 56px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.reviews__footnote {
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 175%;
+  margin: 0;
+  margin-right: 20px;
+  color: rgba(51, 51, 51, 0.6);
+}

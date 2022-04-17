@@ -1,3 +1,48 @@
-body {
-  background: #ffffff;
+@import "./fonts.scss";
+@import "./main-header/main-header.scss";
+@import "./main-header/main-navigation.scss";
+@import "./main-container.scss";
+@import "./main-index/main-index.scss";
+@import "./main-index/intro.scss";
+@import "./main-index/benefits.scss";
+@import "./main-index/content.scss";
+@import "./main-index/search.scss";
+@import "./button.scss";
+@import "./main-footer/main-footer.scss";
+@import "./main-footer/social.scss";
+@import "./main-footer/copyright.scss";
+@import "./gallery/gallery.scss";
+@import "./gallery/photo.scss";
+@import "./presentation.scss";
+@import "./main-catalog.scss";
+@import "./reviews/reviews.scss";
+@import "./fieldset.scss";
+@import "./reviews/author-contact.scss";
+@import "./reviews/author-emotions.scss";
+@import "./reviews/author-impression.scss";
+@import "./reviews/author-visited.scss";
+@import "./form.scss";
+@import "./modal.scss";
+
+
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
