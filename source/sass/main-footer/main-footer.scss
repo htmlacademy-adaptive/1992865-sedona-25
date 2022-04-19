@@ -1,0 +1,15 @@
+.main-footer__wraper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.main-footer__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 124%;
+  text-transform: uppercase;
+}
