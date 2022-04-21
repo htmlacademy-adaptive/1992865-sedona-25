@@ -1,0 +1,25 @@
+.social__list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  background-color: #81b3d2;
+  margin-right: 6px;
+}
+
+.social__link--vkontakte {
+  padding: 15px 12px;
+}
+
+.social__link--telegram {
+  padding: 11px 13px;
+}
+
+.social__link--youtube {
+  padding: 15px 14px;
+}

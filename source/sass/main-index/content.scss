@@ -1,0 +1,25 @@
+.content {
+  text-align: left;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.content__list {
+  padding: 0;
+  margin-left: 65px;
+}
+
+.content__title {
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.content__title--house {
+  padding-top: 31px;
+}
+
+.content__description {
+  margin-bottom: 30px;
+}
