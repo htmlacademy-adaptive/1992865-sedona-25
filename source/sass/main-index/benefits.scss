@@ -56,3 +56,33 @@
   margin: 0;
   padding-bottom: 35px;
 }
+
+/* @media (min-width: $tablet-width) {
+  .benefits__list {
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-template-columns: 768px;
+    grid-template-rows: 256px 256px 256px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .benefits__item {
+    display: flex;
+  }
+
+  .benefits__item--theme {
+    background-image: none;
+    padding: 0;
+  }
+
+  .benefits__foto {
+    display: inline;
+    width: 100%;
+  }
+} */
+
+/* @media (min-width: $desktop-width) {
+
+} */

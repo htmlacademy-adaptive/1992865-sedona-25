@@ -3,6 +3,20 @@
   min-height: 389px;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover;
+  background-size: contain;
   background-color: #e3f0f9;
+}
+
+@media (min-width: $tablet-width) {
+  .main-index__intro {
+    background-image: url("../img/intro-divider-tablet.svg"), url("../img/index-intro-tablet.jpg");
+    min-height: 518px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-index__intro {
+    background-image: url("../img/intro-divider-desktop.svg"), url("../img/index-intro-desktop.jpg");
+    min-height: 518px;
+  }
 }

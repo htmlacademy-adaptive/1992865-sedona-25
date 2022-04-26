@@ -13,6 +13,7 @@
 .content__title {
   line-height: 26px;
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -23,3 +24,12 @@
 .content__description {
   margin-bottom: 30px;
 }
+
+/* @media (min-width: $tablet-width) {
+  .content__list {
+    display: grid;
+    grid-template-columns: 256px 512px;
+    margin: 0;
+    padding: 0;
+  }
+} */

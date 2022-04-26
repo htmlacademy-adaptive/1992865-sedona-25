@@ -1,3 +1,16 @@
-.main-header__wraper {
+.main-header__wrapper {
   width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    width: $desktop-width;
+  }
 }
