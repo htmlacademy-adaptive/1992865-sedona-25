@@ -25,8 +25,7 @@
 }
 
 .benefits__item {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: #eeeeee;
 }
 
 .benefits__item--theme {
@@ -36,9 +35,9 @@
   padding-top: 54px;
 }
 
-.benefits__item--color {
-  background-color: #d6d6d6;
-  color: #000000;
+.benefits__item--photo {
+  background-color: #81b3d2;
+  color: #eeeeee;
 }
 
 .benefits__title {
@@ -57,19 +56,27 @@
   padding-bottom: 35px;
 }
 
-/* @media (min-width: $tablet-width) {
+.benefits__image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits {
+    width: $tablet-width;
+  }
+
   .benefits__list {
-    display: grid;
-    grid-column-start: 3;
-    grid-row-start: 3;
-    grid-template-columns: 768px;
-    grid-template-rows: 256px 256px 256px;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
   }
 
   .benefits__item {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 256px;
+    padding: 0;
   }
 
   .benefits__item--theme {
@@ -77,12 +84,59 @@
     padding: 0;
   }
 
-  .benefits__foto {
-    display: inline;
-    width: 100%;
+  .benefits__item--photo {
+    width: $tablet-width;
+    background-color: #81b3d2;
+    color: #eeeeee;
   }
-} */
 
-/* @media (min-width: $desktop-width) {
+  .benefits__item-wrapper {
+    display: flex;
+  }
 
-} */
+  .benefits__text {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .benefits__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 124%;
+    padding-left: 1px;
+  }
+
+  .benefits__description {
+    padding: 0;
+    margin-bottom: 44px;
+  }
+
+  .benefits__image {
+    width: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits {
+    width: $desktop-width;
+  }
+
+  .benefits__item {
+    width: 400px;
+  }
+
+  .benefits__item--photo {
+    width: $desktop-width;
+    background-color: #81b3d2;
+    color: #eeeeee;
+  }
+
+  .benefits__text {
+    padding-left: 71px;
+    padding-right: 72px;
+  }
+
+  .benefits__image {
+    width: 800px;
+  }
+}

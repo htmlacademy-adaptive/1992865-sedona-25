@@ -23,3 +23,9 @@
 .social__link--youtube {
   padding: 15px 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-bottom: 0;
+  }
+}

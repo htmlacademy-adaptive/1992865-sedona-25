@@ -55,24 +55,26 @@
       <p class="benefits__subtitle">
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
       </p>
-      <ol class="benefits__list">
-        <li class="benefits__item benefits__item--theme">
-          <div>
-          <h3 class="benefits__title">
-            Настоящий город
-          </h3>
-          <p class="benefits__number">
-            — №1 —
-          </p>
-          <p class="benefits__description">
-            Седона не аттракцион для туристов,<br> там течет своя жизнь
-          </p>
-        </div>
-          <div class="benefits__foto">
-            <img class="benefits__image" src="./img/photo-city1x1.jpg" width="320" height="260" alt="Фото города">
+      <ul class="benefits__list">
+        <li class="benefits__item benefits__item--theme benefits__item--photo">
+          <div class="benefits__item-wrapper">
+            <div class="benefits__text">
+              <h3 class="benefits__title">
+                Настоящий город
+              </h3>
+              <p class="benefits__number">
+                — №1 —
+              </p>
+              <p class="benefits__description">
+                Седона не аттракцион для туристов,<br> там течет своя жизнь
+              </p>
+            </div>
+            <div class="benefits__foto">
+              <img class="benefits__image" src="./img/photo-city1x1.jpg" width="320" height="260" alt="Фото города">
+            </div>
           </div>
           <div class="benefits__content content">
-            <ul class="content__list">
+            <ol class="content__list">
               <li class="content__item content__icon">
                 <h4 class="content__title content__title--house">
                   Жилье
@@ -97,57 +99,67 @@
                   Не только китайского, но и<br> местного производства!
                 </p>
               </li>
-            </ul>
+            </ol>
+          </div>
+        </li>
+        <li class="benefits__item benefits__item--photo">
+          <div class="benefits__item-wrapper">
+            <div class="benefits__text">
+              <h3 class="benefits__title">
+                Там есть мост дьявола
+              </h3>
+              <p class="benefits__number">
+                — №2 —
+              </p>
+              <p class="benefits__description">
+                Да, по нему можно пройти! Если вы<br> осмелитесь, конечно
+              </p>
+            </div>
+            <div class="benefits__foto">
+              <img class="benefits__image" src="./img/photo-bridge1x1.jpg" width="320" height="260" alt="Фото гор">
+            </div>
           </div>
         </li>
         <li class="benefits__item">
-          <h3 class="benefits__title">
-            Там есть мост дьявола
-          </h3>
-          <p class="benefits__number">
-            — №2 —
-          </p>
-          <p class="benefits__description">
-            Да, по нему можно пройти! Если вы<br> осмелитесь, конечно
-            </pn>
-          <div class="benefits__foto">
-            <img class="benefits__image" src="./img/photo-bridge1x1.jpg" width="320" height="260" alt="Фото гор">
+          <div class="benefits__text">
+            <h3 class="benefits__title">
+              Небольшая площадь
+            </h3>
+            <p class="benefits__number">
+              — №3 —
+            </p>
+            <p class="benefits__description">
+              Все интересные места находятся<br> очень близко
+            </p>
           </div>
         </li>
-        <li class="benefits__item benefits__item--color">
-          <h3 class="benefits__title">
-            Небольшая площадь
-          </h3>
-          <p class="benefits__number">
-            — №3 —
-          </p>
-          <p class="benefits__description">
-            Все интересные места находятся<br> очень близко
-          </p>
+        <li class="benefits__item">
+          <div class="benefits__text">
+            <h3 class="benefits__title">
+              Красивая дорога
+            </h3>
+            <p class="benefits__number">
+              — №4 —
+            </p>
+            <p class="benefits__description">
+              Ехать в Седону из Лас-вегаса<br> не скучно!
+            </p>
+          </div>
         </li>
-        <li class="benefits__item benefits__item--color">
-          <h3 class="benefits__title">
-            Красивая дорога
-          </h3>
-          <p class="benefits__number">
-            — №4 —
-          </p>
-          <p class="benefits__description">
-            Ехать в Седону из Лас-вегаса<br> не скучно!
-          </p>
+        <li class="benefits__item">
+          <div class="benefits__text">
+            <h3 class="benefits__title">
+              Мало туристов
+            </h3>
+            <p class="benefits__number">
+              — №5 —
+            </p>
+            <p class="benefits__description">
+              Большинство едет в гранд каньон<br> и толпится там
+            </p>
+          </div>
         </li>
-        <li class="benefits__item benefits__item--color">
-          <h3 class="benefits__title">
-            Мало туристов
-          </h3>
-          <p class="benefits__number">
-            — №5 —
-          </p>
-          <p class="benefits__description">
-            Большинство едет в гранд каньон<br> и толпится там
-          </p>
-        </li>
-      </ol>
+      </ul>
     </section>
     <!-- Поиск гостиниц -->
     <section class="search">
@@ -158,9 +170,9 @@
         Заинтересовались?
       </p>
       <p class="search__description">
-        Укажите предполагаемые даты<br> поездки, и мы покажем вам лучшие<br> предложения гостиниц в седоне
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <a class="button button__search" href="#">
+      <a class="button button__search" href="">
         Найти гостиницу
       </a>
     </section>
@@ -221,20 +233,20 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__copyright copyright">
-          <span class="copyright__text">
-            Разработано
+      </div>
+      <div class="main-footer__copyright copyright">
+        <span class="copyright__text">
+          Разработано
+        </span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="#000" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
+          <span class="visually-hidden">
+            HTML Academy
           </span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="35" viewBox="0 0 27 35" fill="#000" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
-            </svg>
-            <span class="visually-hidden">
-              HTML Academy
-            </span>
-          </a>
-        </div>
+        </a>
       </div>
     </div>
   </footer>
