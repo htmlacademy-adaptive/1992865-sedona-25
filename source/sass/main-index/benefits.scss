@@ -8,14 +8,19 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
   margin-left: 18px;
   margin-right: 20px;
-  margin-top: 32px;
   margin-bottom: 35px;
 }
 
 .benefits__subtitle {
+  margin: 0;
   margin-bottom: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .benefits__list {
@@ -25,8 +30,7 @@
 }
 
 .benefits__item {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: #eeeeee;
 }
 
 .benefits__item--theme {
@@ -36,9 +40,9 @@
   padding-top: 54px;
 }
 
-.benefits__item--color {
-  background-color: #d6d6d6;
-  color: #000000;
+.benefits__item--photo {
+  background-color: #81b3d2;
+  color: #eeeeee;
 }
 
 .benefits__title {
@@ -55,4 +59,104 @@
 .benefits__description {
   margin: 0;
   padding-bottom: 35px;
+}
+
+.benefits__image {
+  width: 320px;
+  display: block;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits {
+    width: $tablet-width;
+  }
+
+  .benefits__slogan {
+    font-size: 21px;
+    margin-right: 124px;
+    margin-left: 124px;
+    margin-bottom: 22px;
+  }
+
+  .benefits__subtitle {
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 61px;
+  }
+
+  .benefits__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 256px;
+    padding: 0;
+  }
+
+  .benefits__item--theme {
+    background-image: none;
+    padding: 0;
+  }
+
+  .benefits__item--photo {
+    width: $tablet-width;
+    background-color: #81b3d2;
+    color: #eeeeee;
+  }
+
+  .benefits__item-wrapper {
+    display: flex;
+  }
+
+  .benefits__text {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .benefits__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 124%;
+    padding-left: 1px;
+  }
+
+  .benefits__description {
+    padding: 0;
+    margin-bottom: 44px;
+  }
+
+  .benefits__image {
+    width: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits {
+    width: $desktop-width;
+  }
+
+  .benefits__item {
+    width: 400px;
+  }
+
+  .benefits__item--photo {
+    width: $desktop-width;
+    background-color: #81b3d2;
+    color: #eeeeee;
+  }
+
+  .benefits__text {
+    padding-left: 71px;
+    padding-right: 72px;
+  }
+
+  .benefits__image {
+    width: 800px;
+  }
 }

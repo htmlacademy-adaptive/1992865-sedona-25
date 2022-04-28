@@ -1,3 +1,26 @@
-.main-header__wraper {
+.main-header__wrapper {
   width: 320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    width: $tablet-width;
+  }
+
+  .main-header__logo-wrapper {
+    margin-bottom: -102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    width: $desktop-width;
+  }
+
+  .main-header__logo-wrapper {
+    margin-bottom: -102px;
+  }
 }

@@ -13,3 +13,21 @@
 .copyright__link {
   margin-bottom: 23px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin: 0;
+    margin-right: 13px;
+  }
+
+  .copyright__link {
+    margin-bottom: 0;
+    margin-right: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    margin-right: 120px;
+  }
+}

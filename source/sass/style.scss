@@ -1,4 +1,5 @@
-@import "./fonts.scss";
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
 @import "./page";
 @import "./main-header/main-header.scss";
 @import "./main-header/main-navigation.scss";
@@ -8,6 +9,7 @@
 @import "./main-index/benefits.scss";
 @import "./main-index/content.scss";
 @import "./main-index/search.scss";
+@import "./main-index/maps.scss";
 @import "./button.scss";
 @import "./main-footer/main-footer.scss";
 @import "./main-footer/social.scss";

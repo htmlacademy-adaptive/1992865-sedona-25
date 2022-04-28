@@ -1,3 +1,7 @@
+.main-container {
+  width: 320px;
+}
+
 .main-container__intro-img {
   margin: auto;
   margin-top: 100px;
@@ -12,4 +16,16 @@
   background-position: bottom;
   background-color: #e3f0f9;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container {
+    width: $desktop-width;
+  }
 }
