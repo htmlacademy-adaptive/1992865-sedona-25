@@ -5,12 +5,14 @@
   background-position: bottom;
   background-size: contain;
   background-color: #e3f0f9;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
   .main-index__intro {
     background-image: url("../img/intro-divider-tablet.svg"), url("../img/index-intro-tablet.jpg");
     min-height: 518px;
+    margin-bottom: 48px;
   }
 }
 
@@ -18,5 +20,6 @@
   .main-index__intro {
     background-image: url("../img/intro-divider-desktop.svg"), url("../img/index-intro-desktop.jpg");
     min-height: 518px;
+    margin-bottom: 59px;
   }
 }

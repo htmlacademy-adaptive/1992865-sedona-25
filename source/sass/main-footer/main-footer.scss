@@ -12,6 +12,12 @@
   font-size: 21px;
   line-height: 124%;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.main-footer__social {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,16 +29,12 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0;
+    margin-bottom: 36px;
   }
 
   .main-footer__hashtag {
     margin: 0;
     margin-left: 45px;
-  }
-
-  .main-footer__social {
-    margin-top: 36px;
-    margin-bottom: 36px;
   }
 }
 

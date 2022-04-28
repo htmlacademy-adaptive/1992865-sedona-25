@@ -8,14 +8,19 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
   margin-left: 18px;
   margin-right: 20px;
-  margin-top: 32px;
   margin-bottom: 35px;
 }
 
 .benefits__subtitle {
+  margin: 0;
   margin-bottom: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .benefits__list {
@@ -57,7 +62,9 @@
 }
 
 .benefits__image {
+  width: 320px;
   display: block;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,10 +72,23 @@
     width: $tablet-width;
   }
 
+  .benefits__slogan {
+    font-size: 21px;
+    margin-right: 124px;
+    margin-left: 124px;
+    margin-bottom: 22px;
+  }
+
+  .benefits__subtitle {
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
   .benefits__list {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 61px;
   }
 
   .benefits__item {
