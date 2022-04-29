@@ -15,3 +15,22 @@
 .author-impression__input {
   margin-right: 31px;
 }
+
+@media (min-width: $tablet-width) {
+  .author-impression {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author-impression {
+    width: calc($desktop-width - 240px);
+  }
+
+  .author-impression__input {
+    margin-left: 68px;
+    margin-right: 31px;
+  }
+}

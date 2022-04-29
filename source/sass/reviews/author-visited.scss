@@ -12,3 +12,30 @@
 .author-visited__input {
   margin-right: 28px;
 }
+
+@media (min-width: $tablet-width) {
+  .author-visited {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .author-visited__text {
+    margin-left: 84px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author-visited {
+    width: calc($desktop-width - 240px);
+  }
+
+  .author-visited__input {
+    margin-left: 56px;
+  }
+
+  .author-visited__text {
+    margin: 0;
+  }
+}

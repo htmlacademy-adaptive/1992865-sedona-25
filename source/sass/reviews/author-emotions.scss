@@ -17,3 +17,27 @@
   border: none;
   resize: none;
 }
+
+@media (min-width: $tablet-width) {
+  .author-visited {
+    width: calc($tablet-width - 120px);
+  }
+
+  .author-emotions__input {
+    width: calc($tablet-width - 120px);
+    height: 160px;
+    margin-bottom: 48px;
+    box-sizing: border-box;
+  }
+
+  .author-emotions__title {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author-emotions__input {
+    width: 768px;
+    margin: 0 96px;
+  }
+}

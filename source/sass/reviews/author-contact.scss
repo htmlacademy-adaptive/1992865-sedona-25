@@ -10,3 +10,10 @@
   text-align: left;
   line-height: 150%;
 }
+
+@media (min-width: $tablet-width) {
+  .author-contact__title {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+}
