@@ -15,3 +15,26 @@
   margin: 0;
   margin-bottom: 38px;
 }
+
+@media (min-width: $tablet-width) {
+  .presentation__text {
+    margin-left: 105px;
+    margin-right: 105px;
+  }
+
+  .presentation__video-img {
+    width: 648px;
+    height: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation__text {
+    margin-left: 377px;
+    margin-right: 378px;
+  }
+
+  .presentation__video-img {
+    width: 800px;
+  }
+}

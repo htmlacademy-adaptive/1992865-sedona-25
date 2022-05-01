@@ -1,3 +1,8 @@
+.gallery__wrapper {
+  margin-bottom: 17px;
+  padding: 0 20px;
+}
+
 .gallery__title {
   margin: 0;
   margin-bottom: 26px;
@@ -22,6 +27,29 @@
   padding: 0;
 }
 
-.gallery__wrapper {
-  margin-bottom: 17px;
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    padding: 0 60px;
+  }
+
+  .gallery__text {
+    margin-left: 101px;
+    margin-right: 101px;
+  }
+
+  .gallery__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    padding: 0;
+  }
+
+  .gallery__text {
+    margin-left: 377px;
+    margin-right: 377px;
+  }
 }
