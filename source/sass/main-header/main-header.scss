@@ -10,6 +10,10 @@
     width: $tablet-width;
   }
 
+  .main-header__logo-image {
+    left: 290px;
+  }
+
   .main-header__logo-wrapper {
     margin-bottom: -102px;
   }
@@ -18,9 +22,5 @@
 @media (min-width: $desktop-width) {
   .main-header__wrapper {
     width: $desktop-width;
-  }
-
-  .main-header__logo-wrapper {
-    margin-bottom: -102px;
   }
 }
