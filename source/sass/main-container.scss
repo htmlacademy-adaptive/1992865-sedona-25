@@ -9,7 +9,7 @@
 }
 
 .main-container__intro {
-  background-image: url("../img/intro-triangle-catalog.svg"), url("../img/catalog-intro-mobile.jpg");
+  background-image: url("../img/intro-triangle-catalog.svg"), url("../img/back-desktop.jpg");
   min-height: 214px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,6 +21,17 @@
 @media (min-width: $tablet-width) {
   .main-container {
     width: $tablet-width;
+  }
+
+  .main-container__intro {
+    background-image: url("../img/intro-divider-tablet.svg"), url("../img/back-desktop.jpg");
+    background-size: initial;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__intro {
+    background-image: url("../img/intro-divider-desktop.svg"), url("../img/back-desktop.jpg");
   }
 }
 

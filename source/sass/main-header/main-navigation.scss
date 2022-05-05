@@ -10,6 +10,11 @@
   border: none;
 }
 
+.main-navigation__toogle-img {
+  margin: 17px 20px;
+  margin-left: 0;
+}
+
 .main-navigation__list {
   display: flex;
   flex-direction: column;
@@ -34,6 +39,12 @@
   text-decoration: none;
   padding-top: 17px;
   padding-bottom: 12px;
+}
+
+.main-navigation__logo-image {
+  position: absolute;
+  top: 0;
+  right: 68px;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,6 +74,10 @@
 
   .main-navigation__text {
     color: #000000;
+  }
+
+  .main-navigation__logo-image {
+    left: 290px;
   }
 }
 
@@ -94,5 +109,9 @@
 
   .main-navigation__text {
     color: #000000;
+  }
+
+  .main-navigation__logo-image {
+    left: 500px;
   }
 }

@@ -47,10 +47,22 @@
   margin-bottom: 3px;
 }
 
+@media (min-width: $tablet-width) {
+  .button__reviews {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button__reviews {
+    margin-left: 96px;
+  }
+}
+
 .button__modal-exit {
   background-color: #81b3d2;
   padding-top: 18px;
   padding-bottom: 14px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 54px;
+  padding-right: 55px;
 }
