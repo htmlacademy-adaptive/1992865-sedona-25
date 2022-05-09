@@ -66,3 +66,20 @@
   padding-left: 54px;
   padding-right: 55px;
 }
+
+.button__search,
+.button__reviews,
+.button__modal-exit {
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
