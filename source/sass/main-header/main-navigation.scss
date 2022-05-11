@@ -9,7 +9,7 @@
   top: 17px;
   right: 20px;
   padding: 0;
-  z-index: 10;
+  z-index: 9;
   width: 23px;
   height: 23px;
   background-color: transparent;
@@ -85,7 +85,7 @@
   line-height: 26px;
   text-transform: uppercase;
   list-style-type: none;
-  z-index: 9;
+  z-index: 2;
 
   @media (max-width: $mobile-width-only) {
     &::after {
@@ -108,9 +108,10 @@
   color: #ffffff;
   text-decoration: none;
 }
-
+/* Лого всегда поверх всего */
 .main-navigation__logo-image {
   margin-bottom: -40px;
+  z-index: 10;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -163,8 +164,19 @@
       visibility: hidden;
     }
   }
-}
 
+  .main-navigation--nojs {
+    .main-navigation__toggle {
+      display: none;
+    }
+
+    .main-navigation__list {
+      position: static;
+      padding-top: 35px;
+    }
+  }
+}
+/* Планшет */
 @media (min-width: $tablet-width) {
   .main-navigation {
     flex-direction: row;
@@ -198,10 +210,7 @@
   }
 
   .main-navigation__item--curent {
-    .main-navigation__text {
-      color: #766357;
-    }
-
+    .main-navigation__text,
     &:hover .main-navigation__text,
     &:active .main-navigation__text {
       color: #766357;
@@ -219,7 +228,7 @@
     left: calc(50% - 93px);
   }
 }
-
+/* Десктп */
 @media (min-width: $desktop-width) {
   .main-navigation {
     display: flex;
