@@ -44,6 +44,7 @@
   margin: 0;
   margin-right: 14px;
   fill: #000000;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -101,13 +102,17 @@
 
   .photo__description {
     margin-top: -82px;
-    background-color: #000000;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.99;
     color: rgba(255, 255, 255, 1);
   }
 
+  .photo__author {
+    color: #ffffff;
+  }
+
   .photo__like-icon {
-    fill: #ffffff;
+    fill: rgba(255, 255, 255);
     opacity: 1;
   }
 }

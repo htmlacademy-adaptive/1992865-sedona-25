@@ -67,6 +67,37 @@
   object-fit: cover;
 }
 
+.benefits__content {
+  padding-top: 23px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .benefits {
+    position: relative;
+  }
+
+  .benefits__list {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      width: calc(100% - 36px);
+      height: 1px;
+      background-color: #d6d6d6;
+    }
+
+    &::before {
+      bottom: 335px;
+    }
+
+    &::after {
+      bottom: 168px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .benefits {
     width: $tablet-width;
@@ -74,6 +105,7 @@
 
   .benefits__slogan {
     font-size: 21px;
+    line-height: 124%;
     margin-right: 124px;
     margin-left: 124px;
     margin-bottom: 22px;
@@ -134,6 +166,11 @@
   .benefits__image {
     width: 512px;
   }
+
+  .benefits__content {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -158,5 +195,9 @@
 
   .benefits__image {
     width: 800px;
+  }
+
+  .benefits__description {
+    margin-bottom: 62px;
   }
 }
