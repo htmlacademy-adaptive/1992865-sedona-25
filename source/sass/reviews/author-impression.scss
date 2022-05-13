@@ -6,6 +6,8 @@
 }
 
 .author-impression__text {
+  position: relative;
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
@@ -14,6 +16,22 @@
 
 .author-impression__input {
   margin-right: 31px;
+}
+
+.author-impression__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #008000;
+  border-radius: 50%;
+}
+
+@media (max-width: $mobile-width-only) {
+  .author-impression__text {
+    padding-left: 62px;
+  }
 }
 
 @media (min-width: $tablet-width) {
