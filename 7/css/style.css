@@ -1187,7 +1187,6 @@
 .reviews__author-impression {
   margin-top: 24px;
   margin-bottom: 24px;
-  margin-left: 20px;
   margin-right: 20px;
   padding: 0;
 }
@@ -1222,6 +1221,9 @@
   color: rgba(51, 51, 51, 0.6);
 }
 
+/* @media (max-width: $mobile-width-only) {
+
+} */
 @media (min-width: 768px) {
   .reviews {
     width: 768px;
@@ -1376,6 +1378,8 @@
 }
 
 .author-impression__text {
+  position: relative;
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
@@ -1386,6 +1390,21 @@
   margin-right: 31px;
 }
 
+.author-impression__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #008000;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .author-impression__text {
+    padding-left: 62px;
+  }
+}
 @media (min-width: 768px) {
   .author-impression {
     flex-direction: row;
@@ -1445,7 +1464,7 @@
 }
 .form__input {
   display: block;
-  background-color: #e7e5e5;
+  background-color: #f2f2f2;
   border: none;
   min-width: 264px;
   padding: 16px;
@@ -1454,6 +1473,17 @@
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
+}
+.form__input:hover {
+  background-color: #e5e5e5;
+}
+.form__input:active {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 4px #e5e5e5;
+  outline: none;
+}
+.form__input:focus-visible {
+  outline: none;
 }
 
 @media (min-width: 1200px) {
