@@ -326,7 +326,7 @@
   }
 }
 .main-index__intro {
-  background-image: url("../img/divider-mobile.svg"), url("../img/index-intro-mobile.jpg");
+  background-image: url("../img/divider-mobile.png"), url("../img/index-intro-mobile.jpg");
   min-height: 389px;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -336,14 +336,14 @@
 
 @media (min-width: 768px) {
   .main-index__intro {
-    background-image: url("../img/intro-divider-tablet.svg"), url("../img/index-intro-tablet.jpg");
+    background-image: url("../img/intro-divider-tablet.png"), url("../img/index-intro-tablet.jpg");
     min-height: 518px;
     margin-bottom: 48px;
   }
 }
 @media (min-width: 1200px) {
   .main-index__intro {
-    background-image: url("../img/intro-divider-desktop.svg"), url("../img/index-intro-desktop.jpg");
+    background-image: url("../img/intro-divider-desktop.png"), url("../img/index-intro-desktop.jpg");
     min-height: 518px;
     margin-bottom: 59px;
   }
