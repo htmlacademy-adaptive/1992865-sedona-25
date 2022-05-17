@@ -1,28 +1,79 @@
+
 .author-visited__title {
   margin-bottom: 20px;
 }
 
+.author-visited__wrapper {
+  display: flex;
+  gap: 16px;
+}
+
 .author-visited__text {
+  position: relative;
   text-transform: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
+  text-align: left;
+  width: 280px;
+  padding-left: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+
+  &:hover .author-visited__mark {
+    background-color: #e5e5e5;
+  }
+
+  &:active .author-visited__mark {
+    background-color: #d5d5d5;
+  }
+}
+
+.author-visited__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 .author-visited__input {
-  margin-right: 28px;
+  &:checked + .author-visited__mark {
+    background-image: url("../img/icons/contro-mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:active + .author-visited__mark {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .author-visited__wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .author-visited {
-    display: flex;
+  .author-visited__title {
+    margin-bottom: 28px;
+  }
+
+  .author-visited__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 16px 32px;
+    margin-left: 84px;
+    margin-right: 84px;
   }
 
   .author-visited__text {
-    margin-left: 84px;
+    width: 224px;
   }
 }
 
@@ -31,11 +82,14 @@
     width: calc($desktop-width - 240px);
   }
 
-  .author-visited__input {
-    margin-left: 56px;
+  .author-visited__wrapper {
+    gap: 16px 64px;
+    margin-left: 44px;
+    margin-right: 44px;
   }
 
   .author-visited__text {
+    width: auto;
     margin: 0;
   }
 }

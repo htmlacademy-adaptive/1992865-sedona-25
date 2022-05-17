@@ -5,17 +5,31 @@
   margin-bottom: 20px;
 }
 
+.author-impression__wrapper {
+  display: flex;
+  gap: 16px;
+}
+
 .author-impression__text {
   position: relative;
-  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
+  text-align: left;
   text-transform: none;
-}
+  width: 280px;
+  padding-left: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 
-.author-impression__input {
-  margin-right: 31px;
+  &:hover .author-impression__mark {
+    background-color: #e5e5e5;
+  }
+
+  &:active .author-impression__mark {
+    background-color: #d5d5d5;
+  }
 }
 
 .author-impression__mark {
@@ -24,13 +38,26 @@
   left: 0;
   width: 46px;
   height: 46px;
-  background-color: #008000;
+  background-color: #f2f2f2;
   border-radius: 50%;
 }
 
+.author-impression__input {
+  &:checked + .author-impression__mark {
+    background-image: url("../img/icons/contro-mark-ellipse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:active + .author-impression__mark {
+    opacity: 0.3;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
-  .author-impression__text {
-    padding-left: 62px;
+  .author-impression__wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 
@@ -40,6 +67,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .author-impression__title {
+    width: 402px;
+    margin-bottom: 28px;
+    padding: 0;
+  }
+
+  .author-impression__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 36px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -47,8 +86,12 @@
     width: calc($desktop-width - 240px);
   }
 
-  .author-impression__input {
-    margin-left: 68px;
-    margin-right: 31px;
+  .author-impression__title {
+    margin-bottom: 45px;
+  }
+
+  .author-impression__wrapper {
+    margin-left: 53px;
+    gap: 28px;
   }
 }

@@ -9,6 +9,33 @@
 .author-contact__email {
   text-align: left;
   line-height: 150%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    right: 0;
+  }
+}
+
+.author-contact__telefon {
+  &::before {
+    background-image: url("../img/icons/icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 21px;
+  }
+}
+
+.author-contact__email {
+  &::before {
+    background-image: url("../img/icons/icon-mail.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 116px;
+  }
 }
 
 @media (min-width: $tablet-width) {

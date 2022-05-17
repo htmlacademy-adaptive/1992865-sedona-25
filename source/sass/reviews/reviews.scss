@@ -14,7 +14,7 @@
 .reviews__text {
   color: #333333;
   line-height: 150%;
-  margin-bottom: 28px;
+  margin: 0;
 }
 
 .reviews__form {
@@ -22,6 +22,25 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+.reviews__author-fieldset,
+.reviews__author-contact,
+.reviews__author-impression,
+.reviews__author-visited,
+.reviews__author-emotions {
+  position: relative;
+}
+
+.reviews__layer {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #dbdbdb;
+    top: 0;
+  }
 }
 
 .reviews__author-fieldset {
@@ -62,10 +81,8 @@
 }
 
 .reviews__author-visited {
-  margin-top: 24px;
+  margin: 0;
   margin-bottom: 24px;
-  margin-left: 20px;
-  margin-right: 20px;
   padding: 0;
 }
 
@@ -91,9 +108,20 @@
   color: rgba(51, 51, 51, 0.6);
 }
 
-/* @media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
+  .reviews__text {
+    margin-bottom: 53px;
+  }
 
-} */
+  .reviews__layer {
+    &::before {
+      min-width: 320px;
+      background-color: #dbdbdb;
+      left: -40px;
+      top: -24px;
+    }
+  }
+}
 
 @media (min-width: $tablet-width) {
   .reviews {
@@ -110,11 +138,60 @@
   .reviews__text {
     margin-left: 107px;
     margin-right: 106px;
+    margin-bottom: 102px;
   }
 
   .reviews__author-fieldset {
     margin-bottom: 48px;
     margin-left: 19px;
+
+    .reviews__layer {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .reviews__author-fieldset,
+  .reviews__author-contact {
+    .reviews__layer {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .reviews__layer {
+    &::before,
+    &::after {
+      width: 123px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .reviews__author-impression,
+  .reviews__author-emotions {
+    .reviews__layer {
+      &::before,
+      &::after {
+        top: 13px;
+      }
+    }
+  }
+
+  .reviews__layer--vertical {
+    &::before {
+      width: 1px;
+      height: 100%;
+      left: -64px;
+    }
   }
 
   .reviews__form {
@@ -136,6 +213,13 @@
   .reviews__author-visited {
     margin: 0;
     margin-bottom: 42px;
+
+    .reviews__layer {
+      &::before,
+      &::after {
+        top: 26px;
+      }
+    }
   }
 
   .reviews__author-emotions {
@@ -159,6 +243,26 @@
     margin: 0;
     margin-left: 120px;
     margin-right: 120px;
+  }
+
+  .reviews__text {
+    margin-left: 262px;
+    margin-right: 264px;
+    margin-bottom: 67px;
+  }
+
+  .reviews__layer {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+
+  .reviews__layer--vertical {
+    &::before {
+      width: 1px;
+      left: -60px;
+    }
   }
 
   .reviews__form {
