@@ -8,7 +8,8 @@
 }
 
 .photo__image {
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
   margin: 0;
   margin-bottom: 15px;
 }
@@ -56,10 +57,10 @@
     margin: 0;
   }
 
-  .photo__image--full-size {
+  /* .photo__image--full-size {
     width: 648px;
     height: 400px;
-  }
+  } */
 
   .photo__description {
     flex-direction: row;
@@ -92,9 +93,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo__image {
+  /* .photo__image {
     width: 400px;
-  }
+  } */
 
   .photo__image--full-size {
     width: 1200px;
