@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница формы отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1992865-sedona-25/10/">
+</head>
+
+<body class="page__body">
+  <!-- Шапка -->
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <!-- main-navigation--opened -->
+        <a class="main-navigation__logo" href="./index.html">
+          <img class="main-navigation__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип города">
+        </a>
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__text" href="./index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__text" href="./catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--curent">
+            <a class="main-navigation__text">Форма отзыва</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__text" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Тело -->
+  <main class="main-container main-form">
+    <h1 class="visually-hidden">
+      Форма заполнения отзывов об Отелях в Седоне
+    </h1>
+    <div class="main-container__intro">
+      <img class="main-container__intro-img" src="./img/sedona.svg" width="460" height="80" alt="SEDONA">
+    </div>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">
+          Оставьте свой отзыв
+        </h2>
+        <p class="reviews__text">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+        <form class="reviews__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="reviews__author-fieldset fieldset">
+            <legend class="reviews__author-title reviews__layer">
+              Представьтесь:
+            </legend>
+            <label class="reviews__author-name" for="author-name-id">
+              Имя*:
+              <input class="reviews__author-name-form-input form__input" id="author-name-id" type="text"
+                name="author-name" value="Пётр" placeholder="Имя" required>
+              <span class="visually-hidden">
+                Введите имя автора
+              </span>
+            </label>
+            <label class="reviews__author-surname" for="author-surname-id">
+              Фамилия*:
+              <input class="reviews__author-surname-form-input form__input" id="author-surname-id" type="text"
+                name="author-surname" value="Пустота" placeholder="Фамилия" required>
+              <span class="visually-hidden">
+                Введите фамилию автора
+              </span>
+            </label>
+            <label class="reviews__author-middle-name" for="author-middle-name-id">
+              Отчество:
+              <input class="reviews__author-middle-name-form-input form__input" id="author-middle-name-id" type="text"
+                name="author-middle-name" value="Викторович" placeholder="Отчество">
+              <span class="visually-hidden">
+                Введите отчество автора
+              </span>
+            </label>
+          </fieldset>
+          <fieldset class="reviews__author-contact author-contact fieldset">
+            <legend class="author-contact__title reviews__layer reviews__layer--vertical">
+              Контактная информация:
+            </legend>
+            <label class="author-contact__telefon" for="author-telefon-id">
+              Контактный телефон*:
+              <input class="author-contact__telefon-form-input form__input" id="author-telefon-id" type="tel"
+                name="author-telefon" placeholder="Введите телефон" required>
+              <span class="visually-hidden">
+                Введите номер телефона автора
+              </span>
+            </label>
+            <label class="author-contact__email" for="author-email-id">
+              Электронная почта*:
+              <input class="author-contact__email-form-input form__input" id="author-email-id" type="email"
+                name="author-email" placeholder="Введите e-mail" required>
+              <span class="visually-hidden">
+                Введите e-mail автора
+              </span>
+            </label>
+          </fieldset>
+          <fieldset class="fieldset reviews__author-impression author-impression">
+            <legend class="author-impression__title reviews__layer">
+              Ваше общее впечатление:
+            </legend>
+            <div class="author-impression__wrapper">
+              <label class="author-impression__text">
+                <input class="visually-hidden author-impression__input" type="radio" name="type-impression"
+                  value="positive" checked>Скорее положительное
+                <span class="author-impression__mark"></span>
+              </label>
+              <label class="author-impression__text">
+                <input class="visually-hidden author-impression__input" type="radio" name="type-impression"
+                  value="negative">Скорее отрицательное
+                <span class="author-impression__mark"></span>
+              </label>
+              <label class="author-impression__text">
+                <input class="visually-hidden author-impression__input" type="radio" name="type-impression"
+                  value="neutral">Затрудняюсь ответить
+                <span class="author-impression__mark"></span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="reviews__author-visited author-visited fieldset">
+            <legend class="author-visited__title reviews__layer">
+              Посещенные<br> достопримечательности:
+            </legend>
+            <div class="author-visited__wrapper">
+              <label class="author-visited__text">
+                <input class="visually-hidden author-visited__input" type="checkbox" name="bridge" checked>Мост Дьявола
+                <span class="author-visited__mark"></span>
+              </label>
+              <label class="author-visited__text">
+                <input class="visually-hidden author-visited__input" type="checkbox" name="mountain"
+                  checked>Гора-колокол
+                <span class="author-visited__mark"></span>
+              </label>
+              <label class="author-visited__text">
+                <input class="visually-hidden author-visited__input" type="checkbox" name="park" checked>Слайд-парк
+                <span class="author-visited__mark"></span>
+              </label>
+              <label class="author-visited__text">
+                <input class="visually-hidden author-visited__input" type="checkbox" name="rocks">Красные скалы
+                <span class="author-visited__mark"></span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="reviews__author-emotions author-emotions fieldset">
+            <legend class="author-emotions__title reviews__layer">
+              Опишите свои эмоции:
+            </legend>
+            <textarea class="author-emotions__input" name="text">Опишите подробно все свои восторги
+            </textarea>
+          </fieldset>
+          <button class="button button__reviews" type="submit">
+            Отправить отзыв
+          </button>
+          <p class="reviews__footnote">
+            *-Обязательные поля
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Подвал -->
+  <footer class="main-footer">
+    <div class="main-footer__wraper">
+      <p class="main-footer__hashtag">
+        #visitsedona
+      </p>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14"
+                fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" />
+              </svg>
+              <span class="visually-hidden">
+                Мы в Вконтакте
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18"
+                fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
+              </svg>
+              <span class="visually-hidden">
+                Мы в Телеграме
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14"
+                fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+              </svg>
+              <span class="visually-hidden">
+                Мы в Ютубе
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+        </a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__link-img" aria-hidden="true" focusable="false" width="27" height="35"
+            viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
+          <span class="visually-hidden">
+            HTML Academy
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Модальное окно-->
+  <div class="modal modal__close">
+    <!-- Модальное окно ошибки -->
+    <div class="modal__container modal__container--error">
+      <h2 class="modal__title">
+        Что-то пошло не так!
+      </h2>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="button button__modal-exit" type="submit">
+        Ок
+      </button>
+    </div>
+    <!-- Модальное окно отправки отзыва -->
+    <div class="modal__container modal__container--success">
+      <h2 class="modal__title">
+        Ваш отзыв отправлен!
+      </h2>
+      <p class="modal__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <div class="modal__button">
+        <button class="button button__modal-exit" type="submit">
+          Закрыть окно
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
