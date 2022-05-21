@@ -48,7 +48,7 @@
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 39px;
+  margin-bottom: 29px;
 }
 
 .reviews__author-title {
@@ -104,11 +104,35 @@
   font-size: 12px;
   line-height: 175%;
   margin: 0;
-  margin-right: 20px;
   color: rgba(51, 51, 51, 0.6);
 }
 
 @media (max-width: $mobile-width-only) {
+  .reviews__form {
+    margin-bottom: 53px;
+  }
+
+  .reviews__author-title {
+    margin-bottom: 20px;
+  }
+
+  .reviews__author-fieldset {
+    margin-left: 0;
+  }
+
+  .reviews__author-name,
+  .reviews__author-surname,
+  .reviews__author-middle-name,
+  .reviews__author-contact {
+    margin-left: 17px;
+  }
+
+  .reviews__author-contact {
+    margin-top: 20px;
+    margin-left: 17px;
+    margin-bottom: 19px;
+  }
+
   .reviews__title {
     margin-bottom: 23px;
   }
@@ -121,7 +145,7 @@
     &::before {
       min-width: 320px;
       background-color: #dbdbdb;
-      left: -40px;
+      left: -19px;
       top: -24px;
     }
   }
@@ -136,18 +160,27 @@
     width: 648px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
+    margin-top: 64px;
+  }
+
+  .reviews__title {
+    font-size: 30px;
+    line-height: 87%;
+    font-weight: 700;
+    margin-bottom: 21px;
   }
 
   .reviews__text {
+    line-height: 171%;
     margin-left: 107px;
     margin-right: 106px;
     margin-bottom: 102px;
   }
 
   .reviews__author-fieldset {
-    margin-bottom: 48px;
-    margin-left: 19px;
+    margin-bottom: 47px;
+    margin-left: 15px;
 
     .reviews__layer {
       &::before {
@@ -185,7 +218,7 @@
     .reviews__layer {
       &::before,
       &::after {
-        top: 13px;
+        top: 12px;
       }
     }
   }
@@ -194,8 +227,14 @@
     &::before {
       width: 1px;
       height: 100%;
-      left: -64px;
+      left: -62px;
     }
+  }
+
+  .reviews__author-title {
+    font-size: 21px;
+    line-height: 124%;
+    margin-left: 13px;
   }
 
   .reviews__form {
@@ -212,6 +251,8 @@
   .reviews__author-contact {
     margin: 0;
     margin-bottom: 48px;
+    margin-top: -1px;
+    margin-right: -13px;
   }
 
   .reviews__author-visited {
@@ -233,7 +274,10 @@
   .reviews__footnote {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
   }
 }
 
@@ -247,6 +291,10 @@
     margin: 0;
     margin-left: 120px;
     margin-right: 120px;
+  }
+
+  .reviews__title {
+    margin-bottom: 28px;
   }
 
   .reviews__text {
@@ -270,11 +318,23 @@
   }
 
   .reviews__form {
-    margin-bottom: 100px;
+    margin-bottom: 96px;
+  }
+
+  .reviews__author-fieldset {
+    margin-bottom: 55px;
+  }
+
+  .reviews__author-impression {
+    margin-bottom: 74px;
   }
 
   .reviews__author-emotions {
     margin-bottom: 48px;
+  }
+
+  .reviews__author-visited {
+    margin-bottom: 86px;
   }
 
   .reviews__footnote {

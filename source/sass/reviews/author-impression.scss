@@ -58,6 +58,7 @@
   .author-impression__wrapper {
     flex-direction: column;
     flex-wrap: nowrap;
+    margin-bottom: 25px;
   }
 }
 
@@ -69,6 +70,8 @@
   }
 
   .author-impression__title {
+    font-size: 21px;
+    line-height: 124%;
     width: 402px;
     margin-bottom: 28px;
     padding: 0;

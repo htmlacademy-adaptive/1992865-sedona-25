@@ -42,20 +42,21 @@
   padding-bottom: 14px;
   padding-left: 32px;
   padding-right: 34px;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .button__reviews {
-    margin: 0;
+    padding-left: 62px;
+    padding-right: 48px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .button__reviews {
     margin-left: 96px;
+    padding-left: 93px;
+    padding-right: 77px;
   }
 }
 
