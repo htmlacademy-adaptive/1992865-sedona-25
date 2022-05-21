@@ -109,6 +109,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .reviews__title {
+    margin-bottom: 23px;
+  }
+
   .reviews__text {
     margin-bottom: 53px;
   }

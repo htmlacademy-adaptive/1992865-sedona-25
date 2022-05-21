@@ -30,6 +30,13 @@
   color: #000000;
 }
 
+
+@media (max-width: $mobile-width-only) {
+  .copyright__text {
+    margin-right: 12px
+  }
+}
+
 @media (min-width: $tablet-width) {
   .copyright__text {
     margin: 0;
