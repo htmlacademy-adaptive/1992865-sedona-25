@@ -1,7 +1,8 @@
 .button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   border: none;
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 21px;
   line-height: 124%;
   color: #ffffff;
@@ -13,8 +14,8 @@
   background-color: #81b3d2;
   padding: 16px 47px;
   margin-bottom: 49px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 19px;
+  margin-right: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,21 +43,21 @@
   padding-bottom: 14px;
   padding-left: 32px;
   padding-right: 34px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .button__reviews {
-    padding-left: 62px;
-    padding-right: 48px;
+    padding-left: 66px;
+    padding-right: 76px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .button__reviews {
     margin-left: 96px;
-    padding-left: 93px;
-    padding-right: 77px;
+    padding-left: 95px;
+    padding-right: 107px;
   }
 }
 

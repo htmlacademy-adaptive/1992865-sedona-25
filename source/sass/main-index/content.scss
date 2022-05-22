@@ -48,9 +48,30 @@
   }
 
   .content__title {
+    font-size: 18px;
     padding-top: 8px;
     margin-top: 0;
     margin-bottom: 16px;
+  }
+
+  .content__icon--burger {
+    .content__title {
+      margin-left: 5px;
+    }
+
+    .content__description {
+      margin-left: 5px;
+    }
+  }
+
+  .content__icon--present {
+    .content__title {
+      margin-left: -3px;
+    }
+
+    .content__description {
+      margin-left: -3px;
+    }
   }
 
   .content__description {
@@ -72,18 +93,6 @@
     align-items: center;
   }
 
-  .content__icon--house {
-    background-position: center 60px;
-  }
-
-  .content__icon--burger {
-    background-position: center 63px;
-  }
-
-  .content__icon--present {
-    background-position: center 58px;
-  }
-
   .content__title {
     padding: 0;
     margin-top: 158px;
@@ -96,13 +105,44 @@
   .content__description {
     text-align: center;
     margin: 0;
-    margin-left: 25px;
-    margin-right: 25px;
     margin-bottom: 59px;
+  }
+
+  .content__icon--house {
+    background-position: center 60px;
+
+    .content__description {
+      width: 185px;
+      margin-left: 38px;
+      margin-right: 39px;
+    }
+  }
+
+  .content__icon--burger {
+    background-position: 88px 63px;
+
+    .content__description {
+      margin-top: -1px;
+      margin-left: 49px;
+      margin-right: 50px;
+    }
+  }
+
+  .content__icon--present {
+    background-position: 95px 57px;
+
+    .content__description {
+      width: 193px;
+      margin-top: -1px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .content__list {
+    margin-bottom: 21px;
+  }
+
   .content__item {
     width: 400px;
     display: flex;
@@ -112,5 +152,33 @@
 
   .content__description {
     width: 282px;
+  }
+
+  .content__icon--house {
+    background-position: 161px 59px;
+
+    .content__description {
+      width: 282px;
+      margin-left: 37px;
+      margin-right: 39px;
+    }
+  }
+
+  .content__icon--burger {
+    background-position: 161px 63px;
+
+    .content__description {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  .content__icon--present {
+    background-position: 166px 57px;
+
+    .content__description {
+      width: 195px;
+      margin-left: 19px;
+    }
   }
 }

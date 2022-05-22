@@ -1,4 +1,21 @@
 .maps__location {
-  margin-bottom: 38px;
   border: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .maps__location {
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .maps__location {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .maps__location {
+    margin-bottom: 29px;
+  }
 }

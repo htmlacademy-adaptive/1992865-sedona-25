@@ -1,9 +1,13 @@
 .form__input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   display: block;
   background-color: #f2f2f2;
   border: none;
   min-width: 264px;
   padding: 16px;
+  padding-top: 18px;
+  padding-bottom: 14px;
   padding-right: 0;
   margin-left: -17px;
   margin-bottom: 16px;
@@ -29,5 +33,12 @@
   .form__input {
     box-sizing: border-box;
     width: 430px;
+  }
+
+  .author-contact__telefon,
+  .author-contact__email {
+    .form__input {
+      width: 402px;
+    }
   }
 }
