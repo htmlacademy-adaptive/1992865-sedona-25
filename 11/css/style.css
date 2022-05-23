@@ -16,7 +16,7 @@
 .page {
   height: 100%;
   font-size: 14px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 150%;
   font-weight: 400;
   text-transform: uppercase;
@@ -122,7 +122,6 @@
   display: grid;
   margin: 0;
   padding: 0;
-  padding-top: 56px;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -992,16 +991,18 @@
 }
 @media (min-width: 768px) {
   .maps__location {
+    width: 768px;
     margin-bottom: 25px;
   }
 }
 @media (min-width: 1200px) {
   .maps__location {
+    width: 1200px;
     margin-bottom: 29px;
   }
 }
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   border: none;
   text-transform: uppercase;
@@ -2176,7 +2177,7 @@
   }
 }
 .form__input {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   display: block;
   background-color: #f2f2f2;
