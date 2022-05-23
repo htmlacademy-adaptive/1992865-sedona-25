@@ -10,12 +10,14 @@
 
 @media (min-width: $tablet-width) {
   .maps__location {
+    width: $tablet-width;
     margin-bottom: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .maps__location {
+    width: $desktop-width;
     margin-bottom: 29px;
   }
 }
