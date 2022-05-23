@@ -8,7 +8,7 @@
 @media (max-width: $mobile-width-only) {
   .main-index__intro {
     background-position: bottom, center -52px;
-    min-height: 389px;
+    height: 389px;
     margin-bottom: 32px;
   }
 
@@ -24,7 +24,7 @@
   .main-index__intro {
     background-image: url("../img/intro-divider-tablet.svg"), url("../img/index-intro-desktop@1x.png");
     min-height: 518px;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 
   @media (min-resolution: 2dppx) {

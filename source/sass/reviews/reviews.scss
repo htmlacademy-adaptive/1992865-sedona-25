@@ -48,7 +48,7 @@
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 39px;
+  margin-bottom: 29px;
 }
 
 .reviews__author-title {
@@ -66,7 +66,6 @@
 }
 
 .reviews__author-contact {
-  margin-top: 24px;
   margin-bottom: 34px;
   margin-left: 20px;
   margin-right: 20px;
@@ -74,9 +73,9 @@
 }
 
 .reviews__author-impression {
-  margin-top: 24px;
   margin-bottom: 24px;
   margin-right: 20px;
+  margin-left: 1px;
   padding: 0;
 }
 
@@ -93,7 +92,6 @@
 }
 
 .reviews__author-emotions {
-  margin-top: 24px;
   margin-bottom: 56px;
   padding: 0;
 }
@@ -104,11 +102,48 @@
   font-size: 12px;
   line-height: 175%;
   margin: 0;
-  margin-right: 20px;
   color: rgba(51, 51, 51, 0.6);
 }
 
 @media (max-width: $mobile-width-only) {
+  .reviews__wrapper {
+    margin-bottom: 52px;
+  }
+
+  .reviews__author-title {
+    margin-bottom: 20px;
+  }
+
+  .reviews__author-fieldset {
+    margin-bottom: 49px;
+    margin-left: 0;
+  }
+
+  .reviews__author-name,
+  .reviews__author-surname,
+  .reviews__author-middle-name,
+  .reviews__author-contact {
+    margin-left: 17px;
+  }
+
+  .reviews__author-contact {
+    margin-left: 17px;
+    margin-bottom: 43px;
+
+    .reviews__layer::before {
+      left: -36px;
+      top: -26px;
+    }
+  }
+
+  .reviews__author-visited {
+    margin-bottom: 48px;
+  }
+
+  .reviews__title {
+    margin-bottom: 23px;
+  }
+
   .reviews__text {
     margin-bottom: 53px;
   }
@@ -117,8 +152,8 @@
     &::before {
       min-width: 320px;
       background-color: #dbdbdb;
-      left: -40px;
-      top: -24px;
+      left: -21px;
+      top: -25px;
     }
   }
 }
@@ -132,18 +167,27 @@
     width: 648px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 94px;
+    margin-top: 64px;
+  }
+
+  .reviews__title {
+    font-size: 30px;
+    line-height: 87%;
+    font-weight: 700;
+    margin-bottom: 21px;
   }
 
   .reviews__text {
+    line-height: 171%;
     margin-left: 107px;
     margin-right: 106px;
-    margin-bottom: 102px;
+    margin-bottom: 101px;
   }
 
   .reviews__author-fieldset {
-    margin-bottom: 48px;
-    margin-left: 19px;
+    margin-bottom: 47px;
+    margin-left: 16px;
 
     .reviews__layer {
       &::before {
@@ -181,7 +225,7 @@
     .reviews__layer {
       &::before,
       &::after {
-        top: 13px;
+        top: 12px;
       }
     }
   }
@@ -190,8 +234,14 @@
     &::before {
       width: 1px;
       height: 100%;
-      left: -64px;
+      left: -62px;
     }
+  }
+
+  .reviews__author-title {
+    font-size: 21px;
+    line-height: 124%;
+    margin-left: 13px;
   }
 
   .reviews__form {
@@ -208,11 +258,13 @@
   .reviews__author-contact {
     margin: 0;
     margin-bottom: 48px;
+    margin-top: -1px;
+    margin-right: -13px;
   }
 
   .reviews__author-visited {
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
 
     .reviews__layer {
       &::before,
@@ -224,12 +276,16 @@
 
   .reviews__author-emotions {
     margin: 0;
+    margin-bottom: 48px;
   }
 
   .reviews__footnote {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
   }
 }
 
@@ -243,12 +299,18 @@
     margin: 0;
     margin-left: 120px;
     margin-right: 120px;
+    margin-bottom: 95px;
+  }
+
+  .reviews__title {
+    margin-bottom: 32px;
   }
 
   .reviews__text {
+    line-height: 150%;
     margin-left: 262px;
-    margin-right: 264px;
-    margin-bottom: 67px;
+    margin-right: 263px;
+    margin-bottom: 69px;
   }
 
   .reviews__layer {
@@ -261,16 +323,28 @@
   .reviews__layer--vertical {
     &::before {
       width: 1px;
-      left: -60px;
+      left: -81px;
     }
   }
 
-  .reviews__form {
-    margin-bottom: 100px;
+  .reviews__author-title {
+    margin-left: 25px;
+  }
+
+  .reviews__author-fieldset {
+    margin-bottom: 56px;
+  }
+
+  .reviews__author-impression {
+    margin-bottom: 74px;
   }
 
   .reviews__author-emotions {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
+  }
+
+  .reviews__author-visited {
+    margin-bottom: 86px;
   }
 
   .reviews__footnote {

@@ -28,9 +28,9 @@
 
   .search__description {
     text-align: center;
-    margin-bottom: 41px;
-    margin-left: 167px;
-    margin-right: 166px;
+    margin-bottom: 42px;
+    margin-left: 177px;
+    margin-right: 195px;
   }
 }
 
@@ -39,10 +39,14 @@
     width: $desktop-width;
   }
 
+  .search__title {
+    margin-bottom: 31px;
+  }
+
   .search__description {
     text-align: center;
-    margin-bottom: 46px;
-    margin-left: 383px;
-    margin-right: 382px;
+    margin-bottom: 48px;
+    margin-left: 397px;
+    margin-right: 407px;
   }
 }

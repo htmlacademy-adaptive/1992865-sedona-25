@@ -1,6 +1,6 @@
 
 .author-visited__title {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .author-visited__wrapper {
@@ -61,7 +61,9 @@
 
 @media (min-width: $tablet-width) {
   .author-visited__title {
-    margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 124%;
+    margin-bottom: 29px;
   }
 
   .author-visited__wrapper {
@@ -86,6 +88,10 @@
     gap: 16px 64px;
     margin-left: 44px;
     margin-right: 44px;
+  }
+
+  .author-visited__title {
+    margin-bottom: 59px;
   }
 
   .author-visited__text {

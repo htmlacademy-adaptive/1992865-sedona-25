@@ -2,7 +2,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 144%;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .author-contact__telefon,
@@ -38,9 +38,33 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .author-contact__title {
+    margin-left: 3px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .author-contact__title {
+    font-size: 21px;
+    line-height: 124%;
     padding: 0;
-    margin-bottom: 28px;
+    margin-left: -34px;
+    margin-bottom: 29px;
+  }
+
+  .author-contact__telefon,
+  .author-contact__email {
+    margin-right: 14px;
+
+    &::before {
+      right: 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author-contact__title {
+    margin-left: 14px;
   }
 }

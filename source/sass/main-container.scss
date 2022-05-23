@@ -11,12 +11,15 @@
   background-repeat: no-repeat;
   background-position: bottom, bottom;
   background-color: #e3f0f9;
-  margin-bottom: 36px;
 }
 
 @media (max-width: $mobile-width-only) {
   .main-container__intro {
     height: 158px;
+  }
+
+  .main-catalog .main-container__intro {
+    margin-bottom: 32px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -36,6 +39,10 @@
 @media (min-width: $tablet-width) {
   .main-container {
     width: $tablet-width;
+  }
+
+  .main-catalog .main-container__intro {
+    margin-bottom: 60px;
   }
 
   .main-container__intro {
@@ -58,6 +65,16 @@
 @media (min-width: $desktop-width) {
   .main-container {
     width: $desktop-width;
+  }
+
+  .main-catalog .main-container__intro {
+    margin-bottom: 98px;
+  }
+
+  .main-form {
+    .main-container__intro {
+      margin-bottom: 113px;
+    }
   }
 
   .main-container__intro {
