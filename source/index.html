@@ -9,14 +9,16 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="apple-touch-icon" href="img/favicon/apple-favicon.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <!-- Шапка -->
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-navigation main-navigation--nojs">
-        <!-- main-navigation--closed - Закрытое меню--> <!-- main-navigation--opened - Открытое меня-->
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <!-- main-navigation--closed - Закрытое меню--> <!-- main-navigation--opened - Открытое меня--> <!-- main-navigation--nojs - меню без JS -->
         <a class="main-navigation__logo">
           <img class="main-navigation__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип города">
         </a>
