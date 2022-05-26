@@ -82,6 +82,7 @@
 @media (min-width: $tablet-width) {
   .content__list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     list-style-type: none;
   }
